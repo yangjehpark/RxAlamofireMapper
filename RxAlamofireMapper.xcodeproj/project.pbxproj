@@ -73,9 +73,9 @@
 		1102F3491E5B4F870052DAB9 = {
 			isa = PBXGroup;
 			children = (
-				1102F3831E5B52070052DAB9 /* DemoClasses.swift */,
-				1102F3541E5B4F870052DAB9 /* RxAlamofireMapper */,
 				1102F3531E5B4F870052DAB9 /* Products */,
+				1102F3541E5B4F870052DAB9 /* RxAlamofireMapper */,
+				1102F3831E5B52070052DAB9 /* DemoClasses.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,19 +90,19 @@
 		1102F3541E5B4F870052DAB9 /* RxAlamofireMapper */ = {
 			isa = PBXGroup;
 			children = (
+				1102F3671E5B511B0052DAB9 /* Sources */,
 				1102F36A1E5B51A00052DAB9 /* Alamofire.framework */,
+				1102F3551E5B4F870052DAB9 /* AppDelegate.swift */,
+				1102F35C1E5B4F870052DAB9 /* Assets.xcassets */,
+				1102F3611E5B4F870052DAB9 /* Info.plist */,
+				1102F35E1E5B4F870052DAB9 /* LaunchScreen.storyboard */,
+				1102F3591E5B4F870052DAB9 /* Main.storyboard */,
 				1102F36B1E5B51A00052DAB9 /* ObjectMapper.framework */,
 				1102F36C1E5B51A00052DAB9 /* RxBlocking.framework */,
 				1102F36D1E5B51A00052DAB9 /* RxCocoa.framework */,
 				1102F36E1E5B51A00052DAB9 /* RxSwift.framework */,
 				1102F36F1E5B51A00052DAB9 /* RxTest.framework */,
-				1102F3671E5B511B0052DAB9 /* Sources */,
-				1102F3551E5B4F870052DAB9 /* AppDelegate.swift */,
 				1102F3571E5B4F870052DAB9 /* ViewController.swift */,
-				1102F3591E5B4F870052DAB9 /* Main.storyboard */,
-				1102F35C1E5B4F870052DAB9 /* Assets.xcassets */,
-				1102F35E1E5B4F870052DAB9 /* LaunchScreen.storyboard */,
-				1102F3611E5B4F870052DAB9 /* Info.plist */,
 			);
 			path = RxAlamofireMapper;
 			sourceTree = "<group>";
@@ -112,7 +112,7 @@
 			children = (
 				1102F3681E5B512C0052DAB9 /* RxAlamofireMapper.swift */,
 			);
-			name = Sources;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +205,7 @@
 				1102F35A1E5B4F870052DAB9 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		1102F35E1E5B4F870052DAB9 /* LaunchScreen.storyboard */ = {
@@ -213,6 +214,7 @@
 				1102F35F1E5B4F870052DAB9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -362,6 +364,7 @@
 				1102F3661E5B4F870052DAB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

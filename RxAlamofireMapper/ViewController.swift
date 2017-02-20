@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         
         let request = Alamofire.request("http://myapi.com", method: .get , parameters: nil , encoding: URLEncoding.default, headers: nil )
         
-        let requestSubscription = request.rx_responseObject(type: IndividualProfile.self)
+        let _ = request.rx_responseObject(type: User.self)
             .subscribe(onNext: { (individualProfile) in
                 print(individualProfile)
             }, onError: { (error ) in
