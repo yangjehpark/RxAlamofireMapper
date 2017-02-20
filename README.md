@@ -19,7 +19,7 @@ for now just copy  the `RxAlamofireMapper.swift` class to your project. I'll pro
             }, onCompleted: {
                 print("Completed")
             }) {
-                print("Disposed"      )
+                print("Disposed")
         }
  ```
  Here the user object is a class conforming to the `Mappable` protocol
