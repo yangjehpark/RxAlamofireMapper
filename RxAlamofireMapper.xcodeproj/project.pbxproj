@@ -12,6 +12,7 @@
 		1102F35B1E5B4F870052DAB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1102F3591E5B4F870052DAB9 /* Main.storyboard */; };
 		1102F35D1E5B4F870052DAB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1102F35C1E5B4F870052DAB9 /* Assets.xcassets */; };
 		1102F3601E5B4F870052DAB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1102F35E1E5B4F870052DAB9 /* LaunchScreen.storyboard */; };
+		1102F3691E5B512C0052DAB9 /* RxAlamofireMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102F3681E5B512C0052DAB9 /* RxAlamofireMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1102F35C1E5B4F870052DAB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1102F35F1E5B4F870052DAB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1102F3611E5B4F870052DAB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1102F3681E5B512C0052DAB9 /* RxAlamofireMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxAlamofireMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		1102F3541E5B4F870052DAB9 /* RxAlamofireMapper */ = {
 			isa = PBXGroup;
 			children = (
+				1102F3671E5B511B0052DAB9 /* Sources */,
 				1102F3551E5B4F870052DAB9 /* AppDelegate.swift */,
 				1102F3571E5B4F870052DAB9 /* ViewController.swift */,
 				1102F3591E5B4F870052DAB9 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				1102F3611E5B4F870052DAB9 /* Info.plist */,
 			);
 			path = RxAlamofireMapper;
+			sourceTree = "<group>";
+		};
+		1102F3671E5B511B0052DAB9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1102F3681E5B512C0052DAB9 /* RxAlamofireMapper.swift */,
+			);
+			name = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1102F3691E5B512C0052DAB9 /* RxAlamofireMapper.swift in Sources */,
 				1102F3581E5B4F870052DAB9 /* ViewController.swift in Sources */,
 				1102F3561E5B4F870052DAB9 /* AppDelegate.swift in Sources */,
 			);
