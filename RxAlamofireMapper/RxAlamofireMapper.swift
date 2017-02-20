@@ -21,7 +21,7 @@ public enum ObjectMapError: Error{
 
 extension DataRequest{
     
-    func processMap<N,T>(mapObject:@escaping (AnyObject)->N?, mapError: @escaping (AnyObject)->T?) -> Observable<N>{
+    func processMap<N>(mapObject:@escaping (AnyObject)->N?) -> Observable<N>{
         
         return Observable.create{ (observer) -> Disposable in
             self.responseJSON(completionHandler: { (response : DataResponse<Any>) in
@@ -34,7 +34,7 @@ extension DataRequest{
                     observer.on(Event.next(o))
                     
                 case .failure :
-                    _ =  mapError(response.result.value as AnyObject)
+                    observer.on(Event.error(ObjectMapError.APIResponseError(response.result.value as? JSON)))
                 }
             })
             return Disposables.create {
@@ -43,23 +43,16 @@ extension DataRequest{
         }
     }
     
-    func rx_responseArray<T:Mappable, E : Mappable>(type:T.Type, type2 : E.Type) -> Observable<T>{
+    func rx_responseArray<T:Mappable>(type:T.Type) -> Observable<T>{
         return self.processMap(mapObject: { (json) in
             Mapper<T>().map(JSON: json as! JSON)
             
-        }, mapError: { (error ) in
-            Mapper<E>().map(JSON: error as! JSON )
-            
         })
-        
     }
     
-    func rx_responseObject<T:Mappable, E : Mappable>(type:T.Type, type2 : E.Type) -> Observable<T>{
+    func rx_responseObject<T:Mappable>(type:T.Type) -> Observable<T>{
         return self.processMap(mapObject: { (json) in
             Mapper<T>().map(JSON: json as! [String : Any] )
-            
-        }, mapError: { (error ) in
-            Mapper<E>().map(JSON: error as! [String : Any] )
             
         })
     }
