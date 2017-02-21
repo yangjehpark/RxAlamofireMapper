@@ -9,8 +9,8 @@ for now just copy  the `RxAlamofireMapper.swift` class to your project. I'll pro
 ```
   let request = Alamofire.request("http://myapi.com", method: .get , parameters: nil , encoding: URLEncoding.default, headers: nil )
 ``` 
- 2. Send the Request and SPECIFY the object to be returned 
- ```
+2. Send the Request and SPECIFY the object to be returned 
+```
  request.rx_responseObject(type: User.self)
             .subscribe(onNext: { (user) in
                 print(user)
