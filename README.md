@@ -5,11 +5,12 @@ The combination of [RxSwift](https://github.com/ReactiveX/RxSwift), [Alamofire](
 for now just copy  the `RxAlamofireMapper.swift` class to your project. I'll provide a [CocoaPods](https://cocoapods.org/)  and  [Carthage](https://github.com/Carthage/Carthage) installation soon. 
 ### Usage 
 
- 1. Prepare the request
+1. Prepare the request
 ```
   let request = Alamofire.request("http://myapi.com", method: .get , parameters: nil , encoding: URLEncoding.default, headers: nil )
 ``` 
-2. Send the Request and SPECIFY the object to be returned 
+
+2 . Send the Request and SPECIFY the object to be returned 
 ```
  request.rx_responseObject(type: User.self)
             .subscribe(onNext: { (user) in
