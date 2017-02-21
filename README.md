@@ -56,7 +56,8 @@ class User : NSObject, Mappable{
 }
  ```
  On the `onNext` event. a user object will be the Event value. not the json representing the user object
- ## TODO:
+
+## TODO:
 - [x] Demo
 - [x] Working with 1 generic parameter
 - [ ] Working with 2 generics parameters. The second representing the error 
