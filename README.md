@@ -1,6 +1,7 @@
 # RxAlamofireMapper
 The combination of [RxSwift](https://github.com/ReactiveX/RxSwift), [Alamofire](https://github.com/Alamofire/Alamofire) and [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper) to create beautiful asynchronous API calls
 
+Check out this [blog post](https://blog.wassimseifeddine.com/2017/02/21/lets-talk-about-rxalamofiremapper/) for a tutorial on how to use it 
 ### installation
 for now just copy  the `RxAlamofireMapper.swift` class to your project. I'll provide a [CocoaPods](https://cocoapods.org/)  and  [Carthage](https://github.com/Carthage/Carthage) installation soon. 
 ### Usage 
